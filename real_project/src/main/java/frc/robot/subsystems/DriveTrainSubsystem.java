@@ -12,7 +12,7 @@ public class DriveTrainSubsystem extends Subsystem {
 
     public DriveTrainSubsystem(Talon t){
         if (t == null){
-            throw new IllegalArgumentException("ERror");
+            throw new IllegalArgumentException("Null Exception, illegal argument error");
         }
         this.talon01 = t;
 
