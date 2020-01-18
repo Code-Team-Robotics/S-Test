@@ -13,6 +13,25 @@ public class DriveCommand extends Command {
         requires(driveTrainSubsystem);
         this.driveTrainSubsystem = driveTrainSubsystem;
     }
+    @Override
+    protected void initialize(){}
 
+    @Override
+    protected void execute(){
+        driveTrainSubsystem.setMotorToMax();
+    }
+
+    @Override
+    protected boolean isFinished(){
+        return false;
+    }
+
+    @Override
+    protected void end(){}
+
+    @Override
+    protected void interrupted() {
+        end();
+    }
 
 }
