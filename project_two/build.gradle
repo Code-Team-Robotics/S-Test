@@ -1,6 +1,7 @@
 plugins {
     id "java"
-    id "edu.wpi.first.GradleRIO" version "2020.2.2"
+    id "edu.wpi.first.GradleRIO" version "2020.1.2"
+    id 'java-library'
 }
 
 sourceCompatibility = JavaVersion.VERSION_11
@@ -40,11 +41,26 @@ deploy {
 // Set this to true to enable desktop support.
 def includeDesktopSupport = false
 
+repositories {
+    maven {
+        url "https://devsite.ctr-electronics.com/maven/release/"
+    }
+    maven {
+        url "https://www.revrobotics.com/content/sw/color-sensor-v3/sdk/maven/"
+    }
+}
+
 
 test {
-    useJUnitPlatform()
+    useJUnitPlatform() {
+        includeEngines 'junit-vintage'
+        includeEngines 'junit-jupiter'
+    }
 }
-        
+
+
+
+
 dependencies {
     def junit5Version = '5.5.2'
     implementation wpi.deps.wpilib()
@@ -59,6 +75,14 @@ dependencies {
     testImplementation "org.junit.jupiter:junit-jupiter-api:$junit5Version"
     testImplementation "org.junit.jupiter:junit-jupiter-params:$junit5Version"
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$junit5Version"
+    testCompileOnly 'junit:junit:4.12'
+    testRuntimeOnly "org.junit.vintage:junit-vintage-engine:$junit5Version"
+
+    implementation "com.ctre.phoenix:wpiapi-java:5.17.4"
+    implementation "com.revrobotics.frc:ColorSensorV3-java:1.0.1"
+
+    implementation 'org.mockito:mockito-core:3.2.4'
+    implementation 'com.ctre.phoenix:api-java:5.17.6'
 
     // Enable simulation gui support. Must check the box in vscode to enable support
     // upon debugging

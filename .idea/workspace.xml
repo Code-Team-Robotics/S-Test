@@ -2,12 +2,71 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb9f2e27-c157-4947-a346-e10bb64ee937" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/S-Test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/S-Test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/S-Test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/S-Test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/cscore-cpp-2020.1.2-osxx86-64.zip_e301bd536dafb9fb723d82791b345dec/osx/x86-64/shared/libcscore.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/cscore-cpp-2020.1.2-osxx86-64.zip_e301bd536dafb9fb723d82791b345dec/osx/x86-64/shared/libcscorejni.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/hal-cpp-2020.1.2-osxx86-64.zip_a5d35c6266ea021eca81db8589ea23a8/osx/x86-64/shared/libwpiHal.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/hal-cpp-2020.1.2-osxx86-64.zip_a5d35c6266ea021eca81db8589ea23a8/osx/x86-64/shared/libwpiHaljni.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/ntcore-cpp-2020.1.2-osxx86-64.zip_628d69775b1d57810434dd57536349a3/osx/x86-64/shared/libntcore.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/ntcore-cpp-2020.1.2-osxx86-64.zip_628d69775b1d57810434dd57536349a3/osx/x86-64/shared/libntcorejni.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/opencv-cpp-3.4.7-2-osxx86-64.zip_bf5014b94d90f1a258935ad5dd15f44e/osx/x86-64/shared/libopencv_calib3d.3.4.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/opencv-cpp-3.4.7-2-osxx86-64.zip_bf5014b94d90f1a258935ad5dd15f44e/osx/x86-64/shared/libopencv_core.3.4.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/opencv-cpp-3.4.7-2-osxx86-64.zip_bf5014b94d90f1a258935ad5dd15f44e/osx/x86-64/shared/libopencv_features2d.3.4.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/opencv-cpp-3.4.7-2-osxx86-64.zip_bf5014b94d90f1a258935ad5dd15f44e/osx/x86-64/shared/libopencv_flann.3.4.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/opencv-cpp-3.4.7-2-osxx86-64.zip_bf5014b94d90f1a258935ad5dd15f44e/osx/x86-64/shared/libopencv_highgui.3.4.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/opencv-cpp-3.4.7-2-osxx86-64.zip_bf5014b94d90f1a258935ad5dd15f44e/osx/x86-64/shared/libopencv_imgcodecs.3.4.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/opencv-cpp-3.4.7-2-osxx86-64.zip_bf5014b94d90f1a258935ad5dd15f44e/osx/x86-64/shared/libopencv_imgproc.3.4.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/opencv-cpp-3.4.7-2-osxx86-64.zip_bf5014b94d90f1a258935ad5dd15f44e/osx/x86-64/shared/libopencv_java347.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/opencv-cpp-3.4.7-2-osxx86-64.zip_bf5014b94d90f1a258935ad5dd15f44e/osx/x86-64/shared/libopencv_ml.3.4.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/opencv-cpp-3.4.7-2-osxx86-64.zip_bf5014b94d90f1a258935ad5dd15f44e/osx/x86-64/shared/libopencv_objdetect.3.4.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/opencv-cpp-3.4.7-2-osxx86-64.zip_bf5014b94d90f1a258935ad5dd15f44e/osx/x86-64/shared/libopencv_photo.3.4.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/opencv-cpp-3.4.7-2-osxx86-64.zip_bf5014b94d90f1a258935ad5dd15f44e/osx/x86-64/shared/libopencv_shape.3.4.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/opencv-cpp-3.4.7-2-osxx86-64.zip_bf5014b94d90f1a258935ad5dd15f44e/osx/x86-64/shared/libopencv_stitching.3.4.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/opencv-cpp-3.4.7-2-osxx86-64.zip_bf5014b94d90f1a258935ad5dd15f44e/osx/x86-64/shared/libopencv_superres.3.4.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/opencv-cpp-3.4.7-2-osxx86-64.zip_bf5014b94d90f1a258935ad5dd15f44e/osx/x86-64/shared/libopencv_video.3.4.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/opencv-cpp-3.4.7-2-osxx86-64.zip_bf5014b94d90f1a258935ad5dd15f44e/osx/x86-64/shared/libopencv_videoio.3.4.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/opencv-cpp-3.4.7-2-osxx86-64.zip_bf5014b94d90f1a258935ad5dd15f44e/osx/x86-64/shared/libopencv_videostab.3.4.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/wpiutil-cpp-2020.1.2-osxx86-64.zip_626d37abdc8e8d19030d6c5f758b1987/osx/x86-64/shared/libwpiutil.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/wpiutil-cpp-2020.1.2-osxx86-64.zip_626d37abdc8e8d19030d6c5f758b1987/osx/x86-64/shared/libwpiutiljni.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jniExtractDir/libcscore.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jniExtractDir/libcscorejni.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jniExtractDir/libntcore.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jniExtractDir/libntcorejni.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jniExtractDir/libopencv_calib3d.3.4.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jniExtractDir/libopencv_core.3.4.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jniExtractDir/libopencv_features2d.3.4.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jniExtractDir/libopencv_flann.3.4.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jniExtractDir/libopencv_highgui.3.4.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jniExtractDir/libopencv_imgcodecs.3.4.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jniExtractDir/libopencv_imgproc.3.4.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jniExtractDir/libopencv_java347.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jniExtractDir/libopencv_ml.3.4.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jniExtractDir/libopencv_objdetect.3.4.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jniExtractDir/libopencv_photo.3.4.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jniExtractDir/libopencv_shape.3.4.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jniExtractDir/libopencv_stitching.3.4.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jniExtractDir/libopencv_superres.3.4.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jniExtractDir/libopencv_video.3.4.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jniExtractDir/libopencv_videoio.3.4.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jniExtractDir/libopencv_videostab.3.4.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jniExtractDir/libwpiHal.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jniExtractDir/libwpiHaljni.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jniExtractDir/libwpiutil.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jniExtractDir/libwpiutiljni.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/deploy/example.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frc/robot/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frc/robot/Robot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frc/robot/RobotMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frc/robot/commands/DriveCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frc/robot/subsystems/DriveTrainSubsystem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendordeps/WPILibOldCommands.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +103,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -68,6 +128,7 @@
       <workItem from="1579733320497" duration="46000" />
       <workItem from="1579733377496" duration="56000" />
       <workItem from="1579733446393" duration="128000" />
+      <workItem from="1579966049217" duration="54000" />
     </task>
     <servers />
   </component>
