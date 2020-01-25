@@ -18,7 +18,7 @@ public class DriveCommand extends Command {
 
     @Override
     protected void execute(){
-        driveTrainSubsystem.setMotorToMax();
+        driveTrainSubsystem.setVictorToMax();
     }
 
     @Override

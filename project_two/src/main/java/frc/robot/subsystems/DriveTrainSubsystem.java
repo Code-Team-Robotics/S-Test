@@ -24,9 +24,11 @@ public class DriveTrainSubsystem extends Subsystem {
         throw new IllegalAccessError("Constructor error... please stop");
     }
 
-    public void setMotorToMax(){
+    public void setVictorToMax(){
         this.motor_1.set(ControlMode.PercentOutput, 1);
     }
+
+    public void setVictorToZero() { this.motor_1.set(ControlMode.PercentOutput, 0); }
 
     @Override
     protected void initDefaultCommand(){
