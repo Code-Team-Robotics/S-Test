@@ -27,7 +27,9 @@ public class DriveCommand extends Command {
     }
 
     @Override
-    protected void end(){}
+    protected void end(){
+        driveTrainSubsystem.setVictorToZero();
+    }
 
     @Override
     protected void interrupted() {
