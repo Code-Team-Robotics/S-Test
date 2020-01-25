@@ -24,24 +24,25 @@ public class RobotMap
     public final static int Port_3 = 3;
     public final static int Port_4 = 4;
 
-    //IDS
-    public final static int ID_0 = 0;
-    public final static int ID_1 = 1;
-    public final static int ID_2 = 2;
-    public final static int ID_3 = 3;
-    public final static int ID_4 = 4;
+    // Joystick IDs
+    // Non-labeled elements are named to describe their location
+    // Labeled elements describe their name on the joystick, NOT THEIR VALUE
+    public final static int ID_TRIGGER = 0;
+    public final static int ID_THUMB = 1;
+    public final static int ID_3 = 2;
+    public final static int ID_4 = 3;
+    public final static int ID_5 = 4;
+    public final static int ID_6 = 5;
+    public final static int ID_7 = 6;
+    public final static int ID_8 = 7;
+    public final static int ID_9 = 8;
+    public final static int ID_10 = 9;
+    public final static int ID_11 = 10;
+    public final static int ID_12 = 11;
+
+
 
     // I2C Ports
     public final static I2C.Port i2cPort = I2C.Port.kOnboard;
 
-
-    // For example to map the left and right motors, you could define the
-    // following variables to use with your drivetrain subsystem.
-    // public static int leftMotor = 1;
-    // public static int rightMotor = 2;
-
-    // If you are using multiple modules, make sure to define both the port
-    // number and the module. For example you with a rangefinder:
-    // public static int rangefinderPort = 1;
-    // public static int rangefinderModule = 1;
 }

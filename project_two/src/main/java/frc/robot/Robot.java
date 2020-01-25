@@ -44,7 +44,7 @@ public class Robot extends TimedRobot
   // private final CommandGroup exampleCommandGroup;
   // Declare Operator Interface (Joysticks, controllers)
   private final Joystick joystick;
-  private final JoystickButton button;
+  private final JoystickButton trigger;
 
 
   private Command autonomousCommand;
@@ -56,7 +56,7 @@ public class Robot extends TimedRobot
     this.colorSensorV3 = new ColorSensorV3(RobotMap.i2cPort);
 
     this.joystick = new Joystick(RobotMap.Port_0);
-    this.button = new JoystickButton(joystick, RobotMap.ID_1);
+    this.trigger = new JoystickButton(joystick, RobotMap.ID_TRIGGER);
 
     this.driveTrainSubsystem = new DriveTrainSubsystem(victorSPX_01);
     this.driveCommand = new DriveCommand(driveTrainSubsystem);
@@ -68,7 +68,7 @@ public class Robot extends TimedRobot
    * This allows all the hardware to be called in one place
    */
   public void wireUpOperatorInterface() {
-    button.whileHeld(driveCommand);
+    trigger.whileHeld(driveCommand);
   }
 
 
@@ -96,48 +96,7 @@ public class Robot extends TimedRobot
   @Override
   public void robotPeriodic()
   {
-    /**
-     * The method GetColor() returns a normalized color value from the sensor and can be
-     * useful if outputting the color to an RGB LED or similar. To
-     * read the raw color, use GetRawColor().
-     *
-     * The color sensor works best when within a few inches from an object in
-     * well lit conditions (the built in LED is a big help here!). The farther
-     * an object is the more light from the surroundings will bleed into the
-     * measurements and make it difficult to accurately determine its color.
-     */
-    Color detectedColor = colorSensorV3.getColor();
-
-    /**
-     * The sensor returns a raw IR value of the infrared light detected.
-     */
-    double IR = colorSensorV3.getIR();
-
-    /**
-     * Open Smart Dashboard or Shuffleboard to see the color detected by the
-     * sensor.
-     */
-    SmartDashboard.putNumber("Red", detectedColor.red);
-    SmartDashboard.putNumber("Green", detectedColor.green);
-    SmartDashboard.putNumber("Blue", detectedColor.blue);
-    SmartDashboard.putNumber("IR", IR);
-
-    /**
-     * In addition to RGB IR values, the color sensor can also return an
-     * infrared proximity value. The chip contains an IR led which will emit
-     * IR pulses and measure the intensity of the return. When an object is
-     * close the value of the proximity will be large (max 2047 with default
-     * settings) and will approach zero when the object is far away.
-     *
-     * Proximity can be used to roughly approximate the distance of an object
-     * or provide a threshold for when an object is close enough to provide
-     * accurate color values.
-     */
-    int proximity = colorSensorV3.getProximity();
-
-    SmartDashboard.putNumber("Proximity", proximity);
-
-
+    System.out.println("X:" + joystick.getX() + " Y:" + joystick.getY() + " Z:" + joystick.getZ());
   }
 
   /**
