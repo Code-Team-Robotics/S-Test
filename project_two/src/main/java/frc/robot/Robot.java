@@ -33,7 +33,10 @@ import frc.robot.subsystems.DriveTrainSubsystem;
  */
 public class Robot extends TimedRobot {
   // Declare hardware
-  public final VictorSPX victorSPX_01;
+  public final VictorSPX frontLeft;
+  public final VictorSPX frontRight;
+  public final VictorSPX backLeft;
+  public final VictorSPX backRight;
 
   public final ColorSensorV3 colorSensorV3;
 
@@ -53,14 +56,20 @@ public class Robot extends TimedRobot {
 
   public Robot() {
     super();
-    this.victorSPX_01 = new VictorSPX(RobotMap.ID_4);
+
+    this.frontLeft = new VictorSPX(RobotMap.Motor_ID_1);
+    this.frontRight = new VictorSPX(RobotMap.Motor_ID_2);
+    this.backLeft = new VictorSPX(RobotMap.Motor_ID_3);
+    this.backRight = new VictorSPX(RobotMap.Motor_ID_4);
+
+
     this.colorSensorV3 = new ColorSensorV3(RobotMap.i2cPort);
 
     this.joystick = new Joystick(RobotMap.Port_0);
     this.trigger = new JoystickButton(joystick, RobotMap.ID_TRIGGER);
-
-    this.driveTrainSubsystem = new DriveTrainSubsystem(victorSPX_01);
-    this.driveCommand = new DriveCommand(driveTrainSubsystem);
+    // create the drive train command
+    this.driveTrainSubsystem = new DriveTrainSubsystem(this.frontLeft, this.frontRight, this.backLeft, this.backRight, this.joystick);
+    this.driveCommand = new DriveCommand(driveTrainSubsystem, joystick);
     //this.exampleCommandGroup = new ExampleCommandGroup();
   }
 
@@ -70,6 +79,7 @@ public class Robot extends TimedRobot {
    */
   public void wireUpOperatorInterface() {
     trigger.whileHeld(driveCommand);
+
   }
 
 

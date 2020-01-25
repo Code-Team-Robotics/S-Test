@@ -3,22 +3,26 @@ package frc.robot.commands;
 
 import edu.wpi.first.wpilibj.command.Command;
 import frc.robot.subsystems.DriveTrainSubsystem;
+import edu.wpi.first.wpilibj.Joystick;
 
 public class DriveCommand extends Command {
     private final DriveTrainSubsystem driveTrainSubsystem;
+    private final Joystick joystick;
     // private long lastTime
 
 
-    public DriveCommand(DriveTrainSubsystem driveTrainSubsystem){
+    public DriveCommand(DriveTrainSubsystem driveTrainSubsystem, Joystick joystick){
         requires(driveTrainSubsystem);
         this.driveTrainSubsystem = driveTrainSubsystem;
+        this.joystick = joystick;
     }
     @Override
-    protected void initialize(){}
+    protected void initialize() {}
 
     @Override
     protected void execute(){
-        driveTrainSubsystem.setVictorToMax();
+        //driveTrainSubsystem.setVictorToMax();
+        driveTrainSubsystem.move();
     }
 
     @Override
@@ -28,7 +32,8 @@ public class DriveCommand extends Command {
 
     @Override
     protected void end(){
-        driveTrainSubsystem.setVictorToZero();
+        // Stop the motors by setting them to zero
+        driveTrainSubsystem.chillOut();
     }
 
     @Override

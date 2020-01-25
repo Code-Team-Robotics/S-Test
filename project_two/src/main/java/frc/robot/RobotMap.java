@@ -24,6 +24,13 @@ public class RobotMap
     public final static int Port_3 = 3;
     public final static int Port_4 = 4;
 
+    // Motor ID
+    public final static int Motor_ID_1 = 1;
+    public final static int Motor_ID_2 = 2;
+    public final static int Motor_ID_3 = 3;
+    public final static int Motor_ID_4 = 4;
+
+
     // Joystick IDs
     // Non-labeled elements are named to describe their location
     // Labeled elements describe their name on the joystick, NOT THEIR VALUE
